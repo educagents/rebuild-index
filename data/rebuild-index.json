@@ -5,6 +5,7 @@
     "Forks are excluded (GitHub search default).",
     "total_count is GitHub's figure and can be approximate for large result sets.",
     "A repository is not a person; this measures rebuilding, not students.",
+    "baseline = every public repository GitHub search returns for the same date range (forks excluded), for comparing growth and star share.",
     "2026 is year-to-date as of the retrieval date."
   ],
   "years": [
@@ -17,6 +18,20 @@
     2025,
     2026
   ],
+  "baseline": {
+    "byYear": {
+      "2019": 15629157,
+      "2020": 21276892,
+      "2021": 27762219,
+      "2022": 33556819,
+      "2023": 38176625,
+      "2024": 43274350,
+      "2025": 58584211,
+      "2026": 72439827
+    },
+    "threeStarsOrFewerShareYear": 2025,
+    "threeStarsOrFewer": 58042954
+  },
   "categories": [
     {
       "id": "syllabus-to-calendar",
@@ -94,9 +109,9 @@
       "id": "flashcard-generator",
       "label": "Flashcard generator",
       "query": "flashcard generator in:name,description",
-      "total": 3690,
+      "total": 3691,
       "approximate": false,
-      "threeStarsOrFewer": 3656,
+      "threeStarsOrFewer": 3657,
       "byYear": {
         "2019": 15,
         "2020": 19,
@@ -105,7 +120,7 @@
         "2023": 166,
         "2024": 202,
         "2025": 639,
-        "2026": 758
+        "2026": 759
       }
     },
     {

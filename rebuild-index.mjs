@@ -94,6 +94,24 @@ for (const c of CATEGORIES) {
   console.error(`  total ${total.total} · ≤3 stars ${lowStars.total}`);
 }
 
+// GitHub-wide baseline, so every category can be read against GitHub's own
+// growth and star distribution. Without it, "98.5% have 3 stars or fewer"
+// looks like a finding; GitHub-wide it's about 99%, i.e. the base rate.
+console.error("GitHub-wide baseline");
+const baselineByYear = {};
+for (const y of YEARS) {
+  const end = y === thisYear ? today.toISOString().slice(0, 10) : `${y}-12-31`;
+  baselineByYear[y] = (await count(`created:${y}-01-01..${end}`)).total;
+}
+const lastFull = thisYear - 1;
+const baselineLowStars = (await count(`created:${lastFull}-01-01..${lastFull}-12-31 stars:0..3`)).total;
+const baseline = {
+  byYear: baselineByYear,
+  threeStarsOrFewerShareYear: lastFull,
+  threeStarsOrFewer: baselineLowStars,
+};
+console.error(`  ${lastFull}: ${baselineByYear[lastFull]} repos, <=3 stars ${baselineLowStars}`);
+
 const out = {
   retrieved: today.toISOString().slice(0, 10),
   source: "https://api.github.com/search/repositories",
@@ -101,9 +119,11 @@ const out = {
     "Forks are excluded (GitHub search default).",
     "total_count is GitHub's figure and can be approximate for large result sets.",
     "A repository is not a person; this measures rebuilding, not students.",
+    "baseline = every public repository GitHub search returns for the same date range (forks excluded), for comparing growth and star share.",
     `${thisYear} is year-to-date as of the retrieval date.`,
   ],
   years: YEARS,
+  baseline,
   categories: results,
 };
 
