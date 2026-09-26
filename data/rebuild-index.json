@@ -1,0 +1,148 @@
+{
+  "retrieved": "2026-09-26",
+  "source": "https://api.github.com/search/repositories",
+  "notes": [
+    "Forks are excluded (GitHub search default).",
+    "total_count is GitHub's figure and can be approximate for large result sets.",
+    "A repository is not a person; this measures rebuilding, not students.",
+    "2026 is year-to-date as of the retrieval date."
+  ],
+  "years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "categories": [
+    {
+      "id": "syllabus-to-calendar",
+      "label": "Syllabus to calendar",
+      "query": "syllabus parser OR syllabus to calendar in:name,description",
+      "total": 131,
+      "approximate": false,
+      "threeStarsOrFewer": 129,
+      "byYear": {
+        "2019": 5,
+        "2020": 4,
+        "2021": 3,
+        "2022": 5,
+        "2023": 2,
+        "2024": 3,
+        "2025": 43,
+        "2026": 61
+      }
+    },
+    {
+      "id": "university-schedule-planner",
+      "label": "University schedule planner",
+      "query": "university schedule planner in:name,description",
+      "total": 134,
+      "approximate": false,
+      "threeStarsOrFewer": 130,
+      "byYear": {
+        "2019": 6,
+        "2020": 2,
+        "2021": 2,
+        "2022": 5,
+        "2023": 9,
+        "2024": 10,
+        "2025": 27,
+        "2026": 55
+      }
+    },
+    {
+      "id": "citation-generator",
+      "label": "Citation generator",
+      "query": "citation generator in:name,description",
+      "total": 593,
+      "approximate": false,
+      "threeStarsOrFewer": 572,
+      "byYear": {
+        "2019": 21,
+        "2020": 30,
+        "2021": 30,
+        "2022": 35,
+        "2023": 39,
+        "2024": 66,
+        "2025": 144,
+        "2026": 183
+      }
+    },
+    {
+      "id": "for-my-university",
+      "label": "“For my university” (in the description)",
+      "query": "\"for my university\" in:description",
+      "total": 3472,
+      "approximate": false,
+      "threeStarsOrFewer": 3429,
+      "byYear": {
+        "2019": 147,
+        "2020": 237,
+        "2021": 299,
+        "2022": 303,
+        "2023": 453,
+        "2024": 508,
+        "2025": 653,
+        "2026": 481
+      }
+    },
+    {
+      "id": "flashcard-generator",
+      "label": "Flashcard generator",
+      "query": "flashcard generator in:name,description",
+      "total": 3690,
+      "approximate": false,
+      "threeStarsOrFewer": 3656,
+      "byYear": {
+        "2019": 15,
+        "2020": 19,
+        "2021": 21,
+        "2022": 30,
+        "2023": 166,
+        "2024": 202,
+        "2025": 639,
+        "2026": 758
+      }
+    },
+    {
+      "id": "gpa-calculator",
+      "label": "GPA calculator",
+      "query": "\"GPA calculator\" in:name,description",
+      "total": 7693,
+      "approximate": false,
+      "threeStarsOrFewer": 7569,
+      "byYear": {
+        "2019": 272,
+        "2020": 392,
+        "2021": 519,
+        "2022": 576,
+        "2023": 908,
+        "2024": 943,
+        "2025": 1674,
+        "2026": 1679
+      }
+    },
+    {
+      "id": "attendance-tracker",
+      "label": "Student attendance tracker",
+      "query": "attendance tracker student in:name,description",
+      "total": 8720,
+      "approximate": false,
+      "threeStarsOrFewer": 8590,
+      "byYear": {
+        "2019": 74,
+        "2020": 98,
+        "2021": 80,
+        "2022": 113,
+        "2023": 354,
+        "2024": 752,
+        "2025": 2648,
+        "2026": 4436
+      }
+    }
+  ]
+}
