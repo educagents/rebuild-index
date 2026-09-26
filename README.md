@@ -13,7 +13,7 @@ How often do students rebuild the same small tool from scratch? This repository 
 | “For my university” (in the description) | 3,472 | 1,134 | 98.8% |
 | Flashcard generator | 3,690 | 1,397 | 99.1% |
 | GPA calculator | 7,693 | 3,353 | 98.4% |
-| Student attendance tracker | 8,720 | 7,084 | 98.5% |
+| Student attendance tracker | 8,722 | 7,085 | 98.5% |
 <!-- index:end -->
 
 The write-up, with the year-by-year chart, is at **https://educagents.ai/rebuild-index**.

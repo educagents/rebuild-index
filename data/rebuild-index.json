@@ -130,9 +130,9 @@
       "id": "attendance-tracker",
       "label": "Student attendance tracker",
       "query": "attendance tracker student in:name,description",
-      "total": 8720,
+      "total": 8722,
       "approximate": false,
-      "threeStarsOrFewer": 8590,
+      "threeStarsOrFewer": 8591,
       "byYear": {
         "2019": 74,
         "2020": 98,
@@ -141,7 +141,7 @@
         "2023": 354,
         "2024": 752,
         "2025": 2648,
-        "2026": 4436
+        "2026": 4437
       }
     }
   ]
