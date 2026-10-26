@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-09-26",
+  "retrieved": "2026-10-26",
   "source": "https://api.github.com/search/repositories",
   "notes": [
     "Forks are excluded (GitHub search default).",
@@ -20,26 +20,26 @@
   ],
   "baseline": {
     "byYear": {
-      "2019": 15629157,
-      "2020": 21276892,
-      "2021": 27762219,
-      "2022": 33556819,
-      "2023": 38176625,
-      "2024": 43274350,
-      "2025": 58584211,
-      "2026": 72439827
+      "2019": 15600218,
+      "2020": 21233420,
+      "2021": 27704305,
+      "2022": 33475754,
+      "2023": 38062681,
+      "2024": 43114373,
+      "2025": 58252889,
+      "2026": 81608074
     },
     "threeStarsOrFewerShareYear": 2025,
-    "threeStarsOrFewer": 58042954
+    "threeStarsOrFewer": 57705026
   },
   "categories": [
     {
       "id": "syllabus-to-calendar",
       "label": "Syllabus to calendar",
       "query": "syllabus parser OR syllabus to calendar in:name,description",
-      "total": 131,
+      "total": 138,
       "approximate": false,
-      "threeStarsOrFewer": 129,
+      "threeStarsOrFewer": 136,
       "byYear": {
         "2019": 5,
         "2020": 4,
@@ -48,34 +48,34 @@
         "2023": 2,
         "2024": 3,
         "2025": 43,
-        "2026": 61
+        "2026": 68
       }
     },
     {
       "id": "university-schedule-planner",
       "label": "University schedule planner",
       "query": "university schedule planner in:name,description",
-      "total": 134,
+      "total": 157,
       "approximate": false,
-      "threeStarsOrFewer": 130,
+      "threeStarsOrFewer": 152,
       "byYear": {
         "2019": 6,
         "2020": 2,
-        "2021": 2,
+        "2021": 3,
         "2022": 5,
         "2023": 9,
-        "2024": 10,
+        "2024": 11,
         "2025": 27,
-        "2026": 55
+        "2026": 76
       }
     },
     {
       "id": "citation-generator",
       "label": "Citation generator",
       "query": "citation generator in:name,description",
-      "total": 593,
+      "total": 631,
       "approximate": false,
-      "threeStarsOrFewer": 572,
+      "threeStarsOrFewer": 609,
       "byYear": {
         "2019": 21,
         "2020": 30,
@@ -84,79 +84,79 @@
         "2023": 39,
         "2024": 66,
         "2025": 144,
-        "2026": 183
+        "2026": 221
       }
     },
     {
       "id": "for-my-university",
       "label": "“For my university” (in the description)",
       "query": "\"for my university\" in:description",
-      "total": 3472,
+      "total": 3517,
       "approximate": false,
-      "threeStarsOrFewer": 3429,
+      "threeStarsOrFewer": 3473,
       "byYear": {
         "2019": 147,
-        "2020": 237,
+        "2020": 236,
         "2021": 299,
         "2022": 303,
         "2023": 453,
-        "2024": 508,
-        "2025": 653,
-        "2026": 481
+        "2024": 504,
+        "2025": 652,
+        "2026": 532
       }
     },
     {
       "id": "flashcard-generator",
       "label": "Flashcard generator",
       "query": "flashcard generator in:name,description",
-      "total": 3691,
+      "total": 3839,
       "approximate": false,
-      "threeStarsOrFewer": 3657,
+      "threeStarsOrFewer": 3803,
       "byYear": {
         "2019": 15,
         "2020": 19,
         "2021": 21,
         "2022": 30,
-        "2023": 166,
-        "2024": 202,
-        "2025": 639,
-        "2026": 759
+        "2023": 165,
+        "2024": 204,
+        "2025": 635,
+        "2026": 914
       }
     },
     {
       "id": "gpa-calculator",
       "label": "GPA calculator",
       "query": "\"GPA calculator\" in:name,description",
-      "total": 7693,
+      "total": 7816,
       "approximate": false,
-      "threeStarsOrFewer": 7569,
+      "threeStarsOrFewer": 7689,
       "byYear": {
         "2019": 272,
         "2020": 392,
-        "2021": 519,
-        "2022": 576,
-        "2023": 908,
-        "2024": 943,
-        "2025": 1674,
-        "2026": 1679
+        "2021": 517,
+        "2022": 577,
+        "2023": 910,
+        "2024": 936,
+        "2025": 1669,
+        "2026": 1813
       }
     },
     {
       "id": "attendance-tracker",
       "label": "Student attendance tracker",
       "query": "attendance tracker student in:name,description",
-      "total": 8722,
-      "approximate": false,
-      "threeStarsOrFewer": 8591,
+      "total": 2934,
+      "approximate": true,
+      "threeStarsOrFewer": 9241,
       "byYear": {
-        "2019": 74,
+        "2019": 73,
         "2020": 98,
-        "2021": 80,
-        "2022": 113,
+        "2021": 81,
+        "2022": 114,
         "2023": 354,
-        "2024": 752,
-        "2025": 2648,
-        "2026": 4437
+        "2024": 748,
+        "2025": 2643,
+        "2026": 5096
       }
     }
   ]

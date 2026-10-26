@@ -3,20 +3,20 @@
 How often do students rebuild the same small tool from scratch, and is it growing faster than GitHub itself? This repository counts it from GitHub's own search API, against a GitHub-wide baseline, and re-runs monthly.
 
 <!-- index:start -->
-**Latest run: 2026-09-26.** From 2024 to 2025, new public repositories on GitHub grew 1.4×. New syllabus-to-calendar repositories grew 14× (3 → 43), about **11× faster than GitHub itself**. In 2026 so far, a new "student attendance tracker" repository appears roughly **every 87 minutes**.
+**Latest run: 2026-10-26.** From 2024 to 2025, new public repositories on GitHub grew 1.4×. New syllabus-to-calendar repositories grew 14× (3 → 43), about **11× faster than GitHub itself**. In 2026 so far, a new "student attendance tracker" repository appears roughly **every 84 minutes**.
 
 | Tool | Repositories (all time) | New in 2024 → 2025 | Growth | vs GitHub's 1.4× |
 |---|---:|---:|---:|---:|
-| *All of GitHub (baseline)* | | 43,274,350 → 58,584,211 | 1.4× | 1× |
-| Syllabus to calendar | 131 | 3 → 43 | 14× | 11× |
-| University schedule planner | 134 | 10 → 27 | 2.7× | 2.0× |
-| Citation generator | 593 | 66 → 144 | 2.2× | 1.6× |
-| “For my university” (in the description) | 3,472 | 508 → 653 | 1.3× | 0.9× |
-| Flashcard generator | 3,691 | 202 → 639 | 3.2× | 2.3× |
-| GPA calculator | 7,693 | 943 → 1,674 | 1.8× | 1.3× |
-| Student attendance tracker | 8,722 | 752 → 2,648 | 3.5× | 2.6× |
+| *All of GitHub (baseline)* | | 43,114,373 → 58,252,889 | 1.4× | 1× |
+| Syllabus to calendar | 138 | 3 → 43 | 14× | 11× |
+| University schedule planner | 157 | 11 → 27 | 2.5× | 1.8× |
+| Citation generator | 631 | 66 → 144 | 2.2× | 1.6× |
+| “For my university” (in the description) | 3,517 | 504 → 652 | 1.3× | 1.0× |
+| Flashcard generator | 3,839 | 204 → 635 | 3.1× | 2.3× |
+| GPA calculator | 7,816 | 936 → 1,669 | 1.8× | 1.3× |
+| Student attendance tracker | 2,934 | 748 → 2,643 | 3.5× | 2.6× |
 
-Small numbers, big multiples: syllabus-to-calendar went from 3 to 43, so read its multiple as a direction, not a precise rate. On stars: 98.5% of syllabus-to-calendar repos have 3 stars or fewer, but so do 99.1% of all repos GitHub created in 2025. Stars don't set these apart.
+Small numbers, big multiples: syllabus-to-calendar went from 3 to 43, so read its multiple as a direction, not a precise rate. On stars: 98.6% of syllabus-to-calendar repos have 3 stars or fewer, but so do 99.1% of all repos GitHub created in 2025. Stars don't set these apart.
 <!-- index:end -->
 
 The write-up, with the year-by-year chart, is at **https://educagents.ai/rebuild-index**.
