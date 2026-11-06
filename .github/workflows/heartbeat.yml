@@ -1,0 +1,49 @@
+# Daily database heartbeat for educagents.ai.
+#
+# Supabase pauses free-tier projects after about a week without activity, and
+# a paused project silently breaks the site's waitlist (this happened from
+# roughly 2026-10-19 to 2026-11-05). This job makes one request that reaches
+# Postgres every day, which counts as activity, and fails loudly if the
+# project is paused or unreachable, so GitHub emails the repo owner.
+#
+# The request is read-only and returns no data: the anon role has no SELECT
+# grant, so Postgres answers "permission denied" (SQLSTATE 42501). Getting
+# that error back is the healthy result. It lives in this public repo because
+# scheduled Actions don't run in the private site repo, and this repo's
+# monthly commit keeps its schedules from being disabled after 60 idle days.
+#
+# Secrets: HEARTBEAT_URL (a PostgREST table URL) and HEARTBEAT_KEY (the
+# project's public anon key).
+name: Heartbeat
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Reach the database
+        env:
+          URL: ${{ secrets.HEARTBEAT_URL }}
+          KEY: ${{ secrets.HEARTBEAT_KEY }}
+        run: |
+          if [ -z "$URL" ] || [ -z "$KEY" ]; then
+            echo "::error::HEARTBEAT_URL or HEARTBEAT_KEY is not set"
+            exit 1
+          fi
+          status=$(curl -sS -o body.json -w '%{http_code}' --max-time 60 --retry 3 --retry-delay 20 \
+            -H "apikey: $KEY" -H "Authorization: Bearer $KEY" "$URL") || status=000
+          code=$(jq -r '.code // empty' body.json 2>/dev/null || true)
+          echo "HTTP $status, code ${code:-none}"
+          if [ "$status" = "401" ] && [ "$code" = "42501" ]; then
+            echo "Database reached (permission denied as expected)."
+          else
+            echo "::error::Unexpected response (HTTP $status). The Supabase project may be paused: resume it in the dashboard."
+            exit 1
+          fi
